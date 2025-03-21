@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mugs</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <img src="image/logo.png" alt="logo" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;margin-right: 400px;">
+        <a href="index.html" style="margin: 0 15px; text-decoration: none; color: black;margin-right: 300px;">Home</a>
+        <div id="cart-dropdown" class="cart-dropdown">
+            <h3>Your Cart</h3>
+            <button onclick="window.location.href='cart.html'">Go to Cart</button>
+            <ul id="cart-items"></ul>
+        </div>
+    </header>
+
+    <h2>Mug Collection</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="image/mug1.jpg" alt="Dog Mug">
+            <h3>Dog Mug</h3>
+            <p>Nu 450</p>
+            <button onclick="addToCart('Dog Mug', 450, 'image/mug1.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug2.jfif" alt="Horse Mug">
+            <h3>Horse Mug</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Horse Mug', 500, 'image/mug2.jfif')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug3.jpg" alt="Flower Mug">
+            <h3>Flower Mug</h3>
+            <p>Nu 700</p>
+            <button onclick="addToCart('Flower Mug', 700, 'image/mug3.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug4.jpg" alt="Cat Mug">
+            <h3>Cat Mug</h3>
+            <p>Nu 800</p>
+            <button onclick="addToCart('Cat Mug', 800, 'image/mug4.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug5.webp" alt="Cute Mug">
+            <h3>Cute Mug</h3>
+            <p>Nu 1000</p>
+            <button onclick="addToCart('Cute Mug', 1000, 'image/mug5.webp')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug6.jpg" alt="Chips Mug">
+            <h3>Chips Mug</h3>
+            <p>Nu 1000</p>
+            <button onclick="addToCart('Chips Mug', 1000, 'image/mug6.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug7.jfif" alt="Mow Mug">
+            <h3>Mow Mug</h3>
+            <p>Nu 800</p>
+            <button onclick="addToCart('Mow Mug', 800, 'image/mug7.jfif')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug8.jpg" alt="Meow Mug">
+            <h3>Meow Mug</h3>
+            <p>Nu 800</p>
+            <button onclick="addToCart('Meow Mug', 800, 'image/mug8.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug9.jpg" alt="Bear Mug">
+            <h3>Bear Mug</h3>
+            <p>Nu 800</p>
+            <button onclick="addToCart('Bear Mug', 800, 'image/mug9.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug10.webp" alt="Bunny Mug">
+            <h3>Bunny Mug</h3>
+            <p>Nu 800</p>
+            <button onclick="addToCart('Bunny Mug', 800, 'image/mug10.webp')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug11.jpg" alt="Couple Mug">
+            <h3>Couple Mug</h3>
+            <p>Nu 1000</p>
+            <button onclick="addToCart('Couple Mug', 1000, 'image/mug11.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug12.jpg" alt="Couple Mug">
+            <h3>Couple Mug</h3>
+            <p>Nu 1000</p>
+            <button onclick="addToCart('Cookie Couple Mug', 1000, 'image/mug12.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug13.webp" alt="Couple Mug">
+            <h3>Couple Mug</h3>
+            <p>Nu 1000</p>
+            <button onclick="addToCart('Cute Couple Mug', 1000, 'image/mug13.webp')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug14.webp" alt="Couple Mug">
+            <h3>Couple Mug</h3>
+            <p>Nu 1300</p>
+            <button onclick="addToCart('Classic Couple Mug', 1300, 'image/mug14.webp')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug15.webp" alt="Couple Mug">
+            <h3>Couple Mug</h3>
+            <p>Nu 1000</p>
+            <button onclick="addToCart('White Couple Mug', 1000, 'image/mug15.webp')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug16.webp" alt="Couple Mug">
+            <h3>Couple Mug</h3>
+            <p>Nu 1400</p>
+            <button onclick="addToCart('Smile Couple Mug', 1400, 'image/mug16.webp')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug17.jpg" alt="Couple Mug">
+            <h3>Couple Mug</h3>
+            <p>Nu 1300</p>
+            <button onclick="addToCart('Meow Couple Mug', 1300, 'image/mug17.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug18.jpg" alt="Couple Mug">
+            <h3>Couple Mug</h3>
+            <p>Nu 1000</p>
+            <button onclick="addToCart('BnW Couple Mug', 1000, 'image/mug18.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug19.jpg" alt="Couple Mug">
+            <h3>Couple Mug</h3>
+            <p>Nu 1300</p>
+            <button onclick="addToCart('KnL Couple Mug', 1300, 'image/mug19.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/mug20.webp" alt="Couple Mug">
+            <h3>Couple Mug</h3>
+            <p>Nu 1200</p>
+            <button onclick="addToCart('HnW Couple Mug', 1200, 'image/mug20.webp')">Add to Cart</button>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section contact-info">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> College of Science and Technology, Rinchending,
+                Phuentsholing, Bhutan</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:WimsicalWonders@gmail.com">WimsicalWonders@gmail.com</a></p>
+        </div>
+        <div class="footer-section social-media">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com/Wangmo175" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@1_lady_bird" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Whimsical Wonders | Designed with ❤️</p>
+</footer>
+</html>

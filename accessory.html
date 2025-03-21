@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Frames</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <img src="image/logo.png" alt="logo" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;margin-right: 400px;">
+        <a href="index.html" style="margin: 0 15px; text-decoration: none; color: black;margin-right: 300px;">Home</a>
+        <div id="cart-dropdown" class="cart-dropdown">
+            <h3>Your Cart</h3>
+            <button onclick="window.location.href='cart.html'">Go to Cart</button>
+            <ul id="cart-items"></ul>
+        </div>
+    </header>
+
+    <h2>Accessory Collection</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="image/acce1.webp" alt="Kiwi Clips">
+            <h3>Kiwi Clips</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Kiwi Clips', 500, 'image/acce1.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce2.webp" alt="Kiwi">
+            <h3>Kiwi Clips</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Kiwi', 500, 'image/acce2.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce3.jfif" alt="Bow Clips">
+            <h3>Bow Clips</h3>
+            <p>Nu 200</p>
+            <button onclick="addToCart('Bow Clips', 200, 'image/acce3.jfif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce4.avif" alt="Kiwi Clip">
+            <h3>Kiwi Clip</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Kiwi Clip', 500, 'image/acce4.avif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce5.jpg" alt="Cute Clips">
+            <h3>Cute Clips</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Cute Clips', 500, 'image/acce5.jpg')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="image/acce6.jpg" alt="Claw Clips">
+            <h3>Claw Clips</h3>
+            <p>Nu 50</p>
+            <button onclick="addToCart('Claw Clips', 50, 'image/acce6.jpg')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="image/acce7.webp" alt="Claw Clip">
+            <h3>Claw Clip</h3>
+            <p>Nu 70</p>
+            <button onclick="addToCart('Claw Clip', 70, 'image/acce7.webp')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="image/acce8.jpg" alt="Butterfly Earring">
+            <h3>Butterfly Earring</h3>
+            <p>Nu 300</p>
+            <button onclick="addToCart('Butterfly Earring', 300, 'image/acce8.jpg')">Add to Cart</button>
+        </div>
+        
+        <div class="product">
+            <img src="image/acce9.jpg" alt="Butterfly Round Earring">
+            <h3>Butterfly Round Earring</h3>
+            <p>Nu 350</p>
+            <button onclick="addToCart('Butterfly Round Earring', 350, 'image/acce9.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce10.jpg" alt="Pearl Earring">
+            <h3>Pearl Earring</h3>
+            <p>Nu 200</p>
+            <button onclick="addToCart('Pearl Earring', 200, 'image/acce10.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce11.avif" alt="Round Earring">
+            <h3>Round Earring</h3>
+            <p>Nu 300</p>
+            <button onclick="addToCart('Round Earring', 300, 'image/acce11.avif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce12.avif" alt="Butterfly Pearl Earring">
+            <h3>Butterfly Pearl Earring</h3>
+            <p>Nu 200</p>
+            <button onclick="addToCart('Butterfly Pearl Earring', 200, 'image/acce12.avif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce13.avif" alt="Bow Earring">
+            <h3>Bow Earring</h3>
+            <p>Nu 150</p>
+            <button onclick="addToCart('Bow Earring', 150, 'image/acce13.avif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce14.webp" alt="Set Earring">
+            <h3>Set Earring</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Set Earring', 500, 'image/acce14.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce15.jpg" alt="Earring">
+            <h3>Dot Set Earring</h3>
+            <p>Nu 600</p>
+            <button onclick="addToCart('Dot Set Earring', 600, 'image/acce15.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce16.jpg" alt="Hanging Earring">
+            <h3>Hanging Earring</h3>
+            <p>Nu 300</p>
+            <button onclick="addToCart('Hanging Earring', 300, 'image/acce16.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce17.jpg" alt="Hanging Flower Earring">
+            <h3>Hanging Flower Earring</h3>
+            <p>Nu 350</p>
+            <button onclick="addToCart('Hanging Flower Earring', 350, 'image/acce17.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce18.webp" alt="Butterfly Hanging Earring">
+            <h3>Butterfly Hanging Earring</h3>
+            <p>Nu 300</p>
+            <button onclick="addToCart('Butterfly Hanging Earring', 300, 'image/acce18.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce19.jpg" alt="Flower Earring">
+            <h3>Flower Earring</h3>
+            <p>Nu 200</p>
+            <button onclick="addToCart('Flower Earring', 200, 'image/acce19.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce20.webp" alt="Butterfly Necklace">
+            <h3>Butterfly Necklace</h3>
+            <p>Nu 450</p>
+            <button onclick="addToCart('Butterfly Necklace', 450, 'image/acce20.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce21.webp" alt="Flower Necklace">
+            <h3>Flower Necklace</h3>
+            <p>Nu 250</p>
+            <button onclick="addToCart('Flower Necklace', 250, 'image/acce21.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce22.webp" alt="Butterfly Gold Necklace">
+            <h3>Butterfly Glod Necklace</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Butterfly Gold Necklace', 500, 'image/acce22.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce23.jpg" alt="Pearl Necklace">
+            <h3>Pearl Necklace</h3>
+            <p>Nu 600</p>
+            <button onclick="addToCart('Pearl Necklace', 600, 'image/acce23.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce24.jpg" alt="Heart Dot Necklace">
+            <h3>Heart Dot Necklace</h3>
+            <p>Nu 450</p>
+            <button onclick="addToCart('Heart Dot Necklace', 450, 'image/acce24.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce25.jpg" alt="Heart Necklace">
+            <h3>Heart Necklace</h3>
+            <p>Nu 350</p>
+            <button onclick="addToCart('Heart Necklace', 350, 'image/acce25.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce26.jfif" alt="Heart Gold Necklace">
+            <h3>Heart Gold Necklace</h3>
+            <p>Nu 250</p>
+            <button onclick="addToCart('Heart Gold Necklace', 250, 'image/acce26.jfif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce27.jpg" alt="Butterfly Chain Necklace">
+            <h3>Butterfly Chain Necklace</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Butterfly Chain Necklace', 500, 'image/acce27.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce28.webp" alt="Necklace">
+            <h3>Set Necklace</h3>
+            <p>Nu 150</p>
+            <button onclick="addToCart('Set Necklace', 150, 'image/acce28.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce29.jpg" alt="Letter Necklace">
+            <h3>Letter Necklace</h3>
+            <p>Nu 300</p>
+            <button onclick="addToCart('Letter Necklace', 300, 'image/acce29.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce30.jfif" alt="Butterfly Bracelet">
+            <h3>Butterfly Bracelet</h3>
+            <p>Nu 359</p>
+            <button onclick="addToCart('Butterfly Bracelet', 359, 'image/acce30.jfif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce31.jpg" alt="Diamond Bracelet">
+            <h3>Diamond Bracelet</h3>
+            <p>Nu 450</p>
+            <button onclick="addToCart('Diamond Bracelet', 450, 'image/acce31.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce32.jpg" alt="Star Bracelet">
+            <h3>Star Bracelet</h3>
+            <p>Nu 250</p>
+            <button onclick="addToCart('Star Bracelet', 250, 'image/acce32.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce33.jpg" alt="Chain Round Bracelet">
+            <h3>Chain Round Bracelet</h3>
+            <p>Nu 550</p>
+            <button onclick="addToCart('Chain Round Bracelet', 550, 'image/acce33.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce34.webp" alt="Flower Bracelet">
+            <h3>Flower Bracelet</h3>
+            <p>Nu 200</p>
+            <button onclick="addToCart('Flower Bracelet', 200, 'image/acce34.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce35.jpg" alt="Chain Bracelet">
+            <h3>Chain Bracelet</h3>
+            <p>Nu 250</p>
+            <button onclick="addToCart('Chain Bracelet', 250, 'image/acce35.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce36.webp" alt="Classic Bracelet">
+            <h3>Classic Bracelet</h3>
+            <p>Nu 300</p>
+            <button onclick="addToCart('Classic Bracelet', 300, 'image/acce36.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce37.jpg" alt="Pearl Bracelet">
+            <h3>Pearl Bracelet</h3>
+            <p>Nu 450</p>
+            <button onclick="addToCart('Pearl Bracelet', 450, 'image/acce37.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce38.jpg" alt="Butterfly Round Bracelet">
+            <h3>Butterfly Round Bracelet</h3>
+            <p>Nu 600</p>
+            <button onclick="addToCart('Butterfly Round Bracelet', 600, 'image/acce38.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce39.avif" alt="Diamond Bracelet">
+            <h3>Diamond Bracelet</h3>
+            <p>Nu 550</p>
+            <button onclick="addToCart('Diamond Bracelet', 550, 'image/acce39.avif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce40.avif" alt="Modern Bracelet">
+            <h3>Modern Bracelet</h3>
+            <p>Nu 350</p>
+            <button onclick="addToCart('Modern Bracelet', 350, 'image/acce40.avif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce41.jpg" alt="Chain Dot Bracelet">
+            <h3>Chain Dot Bracelet</h3>
+            <p>Nu 200</p>
+            <button onclick="addToCart('Chain Dot Bracelet', 200, 'image/acce41.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce42.jpg" alt="Beach Bracelet">
+            <h3>Beach Bracelet</h3>
+            <p>Nu 200</p>
+            <button onclick="addToCart('Beach Bracelet', 200, 'image/acce42.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce43.jfif" alt="Clasic Butterfly Bracelet">
+            <h3>Clasic Butterfly Bracelet</h3>
+            <p>Nu 300</p>
+            <button onclick="addToCart('Clasic Butterfly Bracelet', 300, 'image/acce43.jfif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/acce44.webp" alt="Gold Bracelet">
+            <h3>Gold Bracelet</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Gold Bracelet', 500, 'image/acce44.webp')">Add to Cart</button>
+        </div>
+        
+    </div>
+    <script src="cart.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section contact-info">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> College of Science and Technology, Rinchending,
+                Phuentsholing, Bhutan</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:WimsicalWonders@gmail.com">WimsicalWonders@gmail.com</a></p>
+        </div>
+        <div class="footer-section social-media">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com/Wangmo175" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@1_lady_bird" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Whimsical Wonders | Designed with ❤️</p>
+</footer>
+</html>

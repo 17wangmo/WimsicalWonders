@@ -1,0 +1,117 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-size: cover;
+    background-color: rgb(63, 149, 149);
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+body footer {
+    background-color: black; 
+    color: rgb(182, 176, 183); 
+    text-align: center;
+    padding: 20px 0;
+    width: 100%; 
+    position: relative; 
+}
+
+header {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #095384;;
+    color: rgb(6, 6, 6);
+    padding: 25px 20px;
+    position: relative;
+    height: 100px;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 130px;
+    height: 130px;
+    margin-right: 10px;
+    border-radius: 50%;
+    z-index: -1;
+}
+.cart-icon {
+    position: relative;
+    font-size: 40px;
+    color: #71d8be;
+    top: 20px;
+    margin-right: 100px;
+}
+
+.product-container {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    flex-wrap: wrap;
+}
+
+.product {
+    border: 1px solid #ccc;
+    padding: 10px;
+    text-align: center;
+    width: 200px;
+}
+
+.product img {
+    width: 200px;
+    height: 200px;
+}
+
+.product button {
+    background: #095384;
+    color: white;
+    padding: 8px;
+    border: none;
+    cursor: pointer;
+}
+
+.modal {
+    display: none; 
+    position: fixed; 
+    z-index: 1; 
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: rgba(0, 0, 0, 0.8); 
+    padding-top: 60px;
+}
+
+.modal-content {
+    margin: auto;
+    display: block;
+    width: 80%; 
+    max-width: 700px;
+}
+
+.close {
+    position: absolute;
+    top: 15px;
+    right: 35px;
+    color: #fff;
+    font-size: 40px;
+    font-weight: bold;
+    transition: 0.3s;
+    cursor: pointer;
+}
+
+.close:hover,
+.close:focus {
+    color: #f44336;
+    text-decoration: none;
+    cursor: pointer;
+}

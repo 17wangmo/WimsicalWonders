@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Photo Frames</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">  
+    <link rel="stylesheet" href="style2.css">
+</head>
+<body>
+    <header>
+        <img src="image/logo.png" alt="logo" style="width: 130px; height: 130px; border-radius: 50%; object-fit: cover;margin-right: 400px;">
+        <a href="index.html" style="margin: 0 15px; text-decoration: none; color: black;margin-right: 300px;">Home</a>
+        <div id="cart-dropdown" class="cart-dropdown">
+            <h3>Your Cart</h3>
+            <button onclick="window.location.href='cart.html'">Go to Cart</button>
+            <ul id="cart-items"></ul>
+        </div>
+    </header>
+
+    <h2>Photo Frames Collection</h2>
+    <div class="product-container">
+        <div class="product">
+            <img src="image/frame1.jpg" alt="Frame">
+            <h3>Classic Frame</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Classic Frame', 500, 'image/frame1.jpg')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/frame2.webp" alt="Frame">
+            <h3>Normal Frame</h3>
+            <p>Nu 600</p>
+            <button onclick="addToCart('Normal Frame', 600, 'image/frame2.webp')">Add to Cart</button>
+        </div>
+
+        <div class="product">
+            <img src="image/frame3.webp" alt="Frame">
+            <h3>Modern Frame</h3>
+            <p>Nu 700</p>
+            <button onclick="addToCart('Modern Frame', 700, 'image/frame3.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame4.jfif" alt="Frame">
+            <h3>Vintage Frame</h3>
+            <p>Nu 700</p>
+            <button onclick="addToCart('Vintage Frame', 700, 'image/frame4.jfif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame5.webp" alt="Frame">
+            <h3>Flower Frame</h3>
+            <p>Nu 1500</p>
+            <button onclick="addToCart('Flower Frame', 1500, 'image/frame5.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame6.jfif" alt="Frame">
+            <h3>Multi Frame</h3>
+            <p>Nu 1800</p>
+            <button onclick="addToCart('Multi Frame', 1800, 'image/frame6.jfif')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame7.webp" alt="Frame">
+            <h3>Wooden Frame</h3>
+            <p>Nu 800</p>
+            <button onclick="addToCart('Wooden Frame',800, 'image/frame7.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame8.webp" alt="Frame">
+            <h3>Love Frame</h3>
+            <p>Nu 800</p>
+            <button onclick="addToCart('Love Frame', 800, 'image/frame8.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame9.jpg" alt="Frame">
+            <h3>Mini Frame</h3>
+            <p>Nu 450</p>
+            <button onclick="addToCart('Mini Frame', 450, 'image/frame9.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame10.jpg" alt="Frame">
+            <h3>Small Frame</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Small Frame', 500, 'image/frame10.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame11.webp" alt="Frame">
+            <h3>Clasic Frame</h3>
+            <p>Nu 500</p>
+            <button onclick="addToCart('Classic Frame', 500, 'image/frame11.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame12.jpg" alt="Frame">
+            <h3>Collage Frame</h3>
+            <p>Nu 800</p>
+            <button onclick="addToCart('Collage Frame', 800, 'image/frame12.jpg')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame13.webp" alt="Frame">
+            <h3>Heart Frame</h3>
+            <p>Nu 600</p>
+            <button onclick="addToCart('Heart Frame', 600, 'image/frame13.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame14.webp" alt="Frame">
+            <h3>Double Frame</h3>
+            <p>Nu 700</p>
+            <button onclick="addToCart('Double Frame', 700, 'image/frame14.webp')">Add to Cart</button>
+        </div>
+        <div class="product">
+            <img src="image/frame15.webp" alt="Frame">
+            <h3>Hanging Frame</h3>
+            <p>Nu 1000</p>
+            <button onclick="addToCart('Hanging Frame', 1000, 'image/frame15.webp')">Add to Cart</button>
+        </div>
+    </div>
+    <script src="cart.js"></script>
+</body>
+<footer>
+    <div class="footer-container">
+        <div class="footer-section contact-info">
+            <h2>Contact Us</h2>
+            <p><i class="fas fa-map-marker-alt"></i> College of Science and Technology, Rinchending,
+                Phuentsholing, Bhutan</p>
+            <p><i class="fas fa-envelope"></i> <a href="mailto:WimsicalWonders@gmail.com">WimsicalWonders@gmail.com</a></p>
+        </div>
+        <div class="footer-section social-media">
+            <h2>Follow Us</h2>
+            <a href="https://www.facebook.com/Wangmo175" target="_blank"><i class="fab fa-facebook"></i></a>
+            <a href="https://www.tiktok.com/@1_lady_bird" target="_blank"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+    <p class="footer-bottom">&copy; 2025 Whimsical Wonders | Designed with ❤️</p>
+</footer>
+</html>

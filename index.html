@@ -1,0 +1,383 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Whimsical Wonders</title>
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styling.css">
+</head>
+
+<body>
+    <header>
+        <div class="logo">
+            <img src="image/logo.png" alt="logo">
+        </div>
+        <div class="menu-cart-container">
+            <div class="menu-icon" onclick="togglemenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+            <a href="cart.html" class="cart-icon">
+                <i class="fas fa-shopping-cart"></i>
+                <span id="cart-count" style="display: none;">0</span>
+            </a>
+            </div>
+            <div class="search-bar-container">
+                <div class="search-bar">
+                    <input type="text" id="search-input" placeholder="Search for gifts...">
+                    <button onclick="searchProducts()"><i class="fas fa-search"></i></button>
+                </div>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="frame.html">Photo Frame</a></li>
+                <li><a href="toy.html">Stuff Toy</a></li>
+                <li><a href="flower.html">Flower</a></li>
+                <li><a href="mug.html">Mug</a></li>
+                <li><a href="accessory.html">Accessory</a></li>
+                <li><a href="terms.html">Terms & Conditions</a></li>
+            </ul>
+        </nav>
+        <div class="social-icons">
+            <a href="https://www.facebook.com/Wangmo175" target="_blank">
+                <i class="fab fa-facebook"></i>
+            </a>
+            <a href="https://www.tiktok.com/@1_lady_bird" target="_blank">
+                <i class="fab fa-tiktok"></i>
+            </a>
+        </div>
+    </header>
+
+    <body>
+        <div class="slideshow-container">
+            <div class="mySlides fade">
+                <div class="numbertext">1 / 3</div>
+                <img src="image/slide.jpg" alt="Image 1">
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">2 / 3</div>
+                <video autoplay loop muted playsinline width="100%">
+                    <source src="image/love (2).mp4" type="video/mp4">
+                </video>
+            </div>
+
+            <div class="mySlides fade">
+                <div class="numbertext">3 / 3</div>
+                <img src="image/slide2.jpg" alt="Image 3">
+            </div>
+
+            <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+            <a class="next" onclick="plusSlides(1)">&#10095;</a>
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot" onclick="currentSlide(1)"></span>
+            <span class="dot" onclick="currentSlide(2)"></span>
+            <span class="dot" onclick="currentSlide(3)"></span>
+        </div>
+        <section class="ww-content">
+            <div class="ww-image-box">
+                <img src="image/love.jpg" alt="Coffee and Letter">
+            </div>
+            <div class="ww-text-box">
+    <h2>We deliver happiness</h2>
+    <p>At Whimsical Wonders, we believe that every gift holds the power to create joy, spark smiles, and strengthen bonds. Whether it's a thoughtful surprise for a loved one or a heartfelt token for a special occasion, we ensure that happiness is beautifully wrapped and delivered with love.</p>
+    <p>From handcrafted treasures to personalized keepsakes, every gift tells a story. Let us be a part of your moments of joy, because giving is not just about the present—it’s about the love and memories it carries.</p>
+    <h3>Send happiness today.</h3>
+    <a href="javascript:void(0);" class="ww-contact-link" onclick="openContactModal()">CONTACT US</a>
+</div>
+
+<div id="contactModal" class="modal" onclick="closeContactModal()">
+    <div class="modal-content">
+        <span class="close" onclick="closeContactModal()">&times;</span>
+        <h3>Contact Information</h3>
+        <div id="contact-info" style="display: none;">
+            <p><i class="fas fa-phone-alt"></i> Phone: <a href="tel:+97512345678">+975 12345678</a></p>
+            <p><i class="fas fa-envelope"></i> Email: <a href="mailto:WimsicalWonders@gmail.com">WimsicalWonders@gmail.com</a></p>
+            <p><i class="fas fa-map-marker-alt"></i> Address: College of Science and Technology, Rinchending, Phuentsholing, Bhutan</p>
+        </div>
+
+        <h3>Send us a Message</h3>
+        <form id="contactForm">
+            <label for="name">Name:</label>
+            <input type="text" id="name" name="name" required>
+
+            <label for="email">Email:</label>
+            <input type="email" id="email" name="email" required>
+
+            <label for="message">Message:</label>
+            <textarea id="message" name="message" required></textarea>
+
+            <button type="submit">Send Message</button>
+        </form>
+    </div>
+</div>     
+        </section>
+
+        <div class="About">
+            <h2>ABOUT Whimsical Wonders</h2>
+            <div class="about-container">
+                <div class="description">
+                    <p>Welcome to Whimsical Wonders, your go-to destination for thoughtful and
+                        charming gifts! We offer a delightful selection of mugs, photo frames,
+                        accessories, and flowers, perfect for celebrating special moments or simply
+                        brightening someone’s day. Whether you're looking for a heartfelt keepsake or
+                        a stylish addition to your space, our carefully curated collection ensures you’ll
+                        find something meaningful for every occasion. Let Whimsical Wonders add a touch of
+                        magic to your gifting experience!</p>
+                </div>
+                <div class="map-container">
+                    <iframe
+                        src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d889.9187620969732!2d89.39367723551261!3d26.850285943443346!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x39e3cb2c210e611d%3A0x44c5cb2cd32b18d4!2sCollege%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sbt!4v1741509277492!5m2!1sen!2sbt"
+                        width="270" height="300" style="border:0;" allowfullscreen="" loading="lazy"
+                        referrerpolicy="no-referrer-when-downgrade"></iframe>
+                </div>
+                <video autoplay loop muted playsinline width="400">
+                    <source src="image/myvideo.mp4" type="video/mp4">
+                </video>
+            </div>
+        </div>
+        <section class="gift-ideas">
+            <h2>Gift Ideas</h2>
+            <div class="gift-idea">
+                <img src="image/birthday.webp" alt="Birthday Gifts" class="gift-image">
+                <div class="gift-text">
+                    <h3>Best Gifts for Birthdays</h3>
+                    <p>Looking for the perfect birthday gift? Check out our top picks for every age and interest.</p>
+                    <a href="blog/birthday-gifts.html">Read More</a>
+                </div>
+            </div>
+            <div class="gift-idea">
+                <img src="image/loved.jfif" alt="Romantic Gifts for Loved One" class="gift-image">
+                <div class="gift-text">
+                    <h3>Romantic Gifts for Your Loved One</h3>
+                    <p>Express your love with thoughtful gifts that speak from the heart.</p>
+                    <a href="blog/romantic-gifts.html">Read More</a>
+                </div>
+            </div>
+            <div class="gift-idea">
+                <img src="image/wedding.jpg" alt="Wedding Gifts" class="gift-image">
+                <div class="gift-text">
+                    <h3>Unique Wedding Gifts</h3>
+                    <p>Find the perfect gift to celebrate the happy couple's new journey.</p>
+                    <a href="blog/wedding-gifts.html">Read More</a>
+                </div>
+            </div>
+        </section>
+        <div class="promotion">
+            <video autoplay muted loop>
+                <source src="image/love (2).mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <div class="promotion-text">
+                <h2>Summer Sale!</h2>
+                <p>Up to 20% off on all items</p>
+            </div>
+        </div>
+       
+        <div class="info-container">
+            <div class="info">
+                <div class="info-box">
+                    <a href="frame.html">
+                        <img src="image/frame.jpg" alt="Frame" class="info-box-image">
+                    </a>
+                    <div class="info-box-text">
+                        <h2>Photo Frame</h2>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <a href="toy.html">
+                        <img src="image/toy.jpg" alt="MacBook" class="info-box-image">
+                    </a>
+                    <div class="info-box-text">
+                        <h2>Stuff Toy</h2>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <a href="flower.html">
+                        <img src="image/flower.webp" alt="AirPods" class="info-box-image">
+                    </a>
+                    <div class="info-box-text">
+                        <h2>Flowers</h2>
+                    </div>
+                </div>
+            </div>
+            <div class="info">
+                <div class="info-box">
+                    <a href="mug.html">
+                        <img src="image/mug.jpg" alt="iPad" class="info-box-image">
+                    </a>
+                    <div class="info-box-text">
+                        <h2>Mugs</h2>
+                    </div>
+                </div>
+
+                <div class="info-box">
+                    <a href="accessory.html">
+                        <img src="image/acce.webp" alt="Watch" class="info-box-image">
+                    </a>
+                    <div class="info-box-text">
+                        <h2>Accessory</h2>
+                    </div>
+                </div>
+            </div>
+        </div>
+        
+        
+        <section class="testimonials">
+            <h2>What Our Customers Say</h2>
+            <div class="testimonial-container">
+                <div class="testimonial">
+                    <img src="image/gavin.webp" alt="Customer 1" class="testimonial-image">
+                    <div class="testimonial-text">
+                        <p>"The gifts I bought from this store were absolutely perfect! High quality and beautifully packaged."</p>
+                        <h4>- Gavin Casalegno</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="image/hardin.webp" alt="Customer 2" class="testimonial-image">
+                    <div class="testimonial-text">
+                        <p>"Amazing customer service and timely delivery. My wife loved the anniversary gift!"</p>
+                        <h4>- Hardin Scott</h4>
+                    </div>
+                </div>
+                <div class="testimonial">
+                    <img src="image/peter.webp" alt="Customer 3" class="testimonial-image">
+                    <div class="testimonial-text">
+                        <p>"I found the perfect wedding gift here! The recipients loved it. Highly recommend this store!"</p>
+                        <h4>- Peter Kavinsky</h4>
+                    </div>
+                </div>
+            </div>
+        </section>
+        
+        <footer>
+            <div class="footer-container">
+                <div class="footer-section contact-info">
+                    <h2>Contact Us</h2>
+                    <p><i class="fas fa-map-marker-alt"></i> College of Science and Technology, Rinchending,
+                        Phuentsholing, Bhutan</p>
+                    <p><i class="fas fa-envelope"></i> <a href="mailto:WimsicalWpnders@gmail.com">WimsicalWonders@gmail.com</a></p>
+                </div>
+                <div class="footer-section social-media">
+                    <h2>Follow Us</h2>
+                    <a href="https://www.facebook.com/Wangmo175" target="_blank"><i class="fab fa-facebook"></i></a>
+                    <a href="https://www.tiktok.com/@1_lady_bird" target="_blank"><i class="fab fa-tiktok"></i></a>
+                </div>
+                <div class="footer-section newsletter">
+                    <h2>Subscribe</h2>
+                    <p>Join our newsletter to get the latest gift ideas!</p>
+                    <input type="email" placeholder="Enter your email">
+                    <button>Subscribe</button>
+                </div>
+            </div>
+            <p class="footer-bottom">&copy; 2025 Whimsical Wonders | Designed with ❤️</p>
+        </footer>
+    </body>
+    <script>
+        function togglemenu() {
+            const navMenu = document.getElementById('nav-menu');
+            if (navMenu.style.display === "block") {
+                navMenu.style.display = "none";
+            } else {
+                navMenu.style.display = "block";
+            }
+        }
+        let slideIndex = 0;
+        showSlides();
+
+        function showSlides() {
+            let slides = document.getElementsByClassName("mySlides");
+
+            for (let i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+
+                let video = slides[i].querySelector("video");
+                if (video) {
+                    video.pause();
+                    video.currentTime = 0;
+                }
+            }
+
+            slideIndex++;
+            if (slideIndex > slides.length) {
+                slideIndex = 1;
+            }
+
+            slides[slideIndex - 1].style.display = "block";
+
+            let activeVideo = slides[slideIndex - 1].querySelector("video");
+            if (activeVideo) {
+                activeVideo.play();
+            }
+
+            setTimeout(showSlides, 3000);
+        }
+        window.onload = function () {
+            updateCartCount();
+        };
+
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+            document.getElementById('cart-count').textContent = cartCount;
+        }
+
+        function togglemenu() {
+            const navMenu = document.getElementById('nav-menu');
+            navMenu.style.display = navMenu.style.display === "block" ? "none" : "block";
+        }
+
+        function updateCartCount() {
+            const cart = JSON.parse(localStorage.getItem("cart")) || [];
+            const cartCount = cart.reduce((total, item) => total + item.quantity, 0);
+
+            const cartCountElement = document.getElementById('cart-count');
+
+            if (cartCount === 0) {
+                cartCountElement.style.display = "none";
+            } else {
+                cartCountElement.style.display = "flex";
+                cartCountElement.textContent = cartCount;
+            }
+        }
+        function searchProducts() {
+            let query = document.getElementById("search-input").value.toLowerCase();
+            let products = ["photo frame", "stuff toy", "flower", "mug", "accessory"];
+            let results = products.filter(product => product.includes(query));
+
+            if (results.length > 0) {
+                alert("Found: " + results.join(", "));
+            } else {
+                alert("No matching products found.");
+            }
+        }
+        function toggleContactInfo() {
+    const contactInfo = document.getElementById("contact-info");
+
+    if (contactInfo.style.display === "none" || contactInfo.style.display === "") {
+        contactInfo.style.display = "block";
+    } else {
+        contactInfo.style.display = "none";
+    }
+}
+function openContactModal() {
+    const contactInfo = document.getElementById("contact-info");
+    contactInfo.style.display = "block";  
+    document.getElementById("contactModal").style.display = "block";
+}
+
+function closeContactModal() {
+    document.getElementById("contactModal").style.display = "none"; 
+}
+
+    </script>
+</body>
+
+</html>
